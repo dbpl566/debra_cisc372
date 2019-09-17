@@ -1,0 +1,10 @@
+all: debra_hello.exe
+
+run: debra_hello.o
+	gcc -o hellomake debra_hello.o
+
+debra_hello: debra_hello.c
+	gcc -c debra_hello.c
+
+clean:
+	rm -f debra_hello ~
